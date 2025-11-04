@@ -1,0 +1,388 @@
+/* STYLING THE HEADER AND NAVBAR  */
+/* ============================= */
+
+.logo{
+  position: relative;
+  width: fit-content;
+}
+
+.arabic-name{
+  font-family: var(--arabic-font);
+  font-size: 48px;
+}
+
+.english-name{
+  font-family: var(--english-font);
+  position: absolute;
+  right: -2px;
+  bottom: -13px;
+  font-size: 28px;
+}
+
+header{
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  padding: 6px 0;
+  width: 100%;
+  margin: auto;
+  background-color: transparent;
+}
+
+header a{
+  color: white;
+}
+
+.update-header{
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all .3s ease-in;
+}
+
+.update-header .logo-link{
+  color: black;
+}
+
+.update-links-color{
+  color: black;
+  transition: all .3s ease-in;
+}
+
+.update-links-color::before{
+  background-color: black;
+}
+
+.header-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav{
+  display: flex;
+  gap: 1.2rem;
+}
+
+header nav a{
+  position: relative;
+  text-transform: capitalize;
+}
+
+header .close-icon,
+header .menu-icon{
+  display: none;
+}
+
+
+header nav a::before{
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 0%;
+  height: 3px;
+  transition: all .3s ease;
+  background-color: white;
+}
+
+header nav a:hover::before{
+  width: 100%;
+}
+
+/* ====================================  */
+/* END OF STYLING THE HEADER AND NAVBAR */
+
+.main{
+  min-width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.main .hero-content{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.main .hero-content .hero-headline{
+  font-size: var(--headline-desktop);
+  color: white;
+  width: 70rem;
+}
+
+.main .hero-content .hero-subheadline{
+  font-size: var(--text-size);
+  color: white;
+  margin-bottom: 18px;
+}
+
+.moroccan-video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: -10;
+}
+
+.main .hero-content .hero-btn{
+  &>a{
+    color: black;
+  }
+}
+
+.main .hero-btn:hover{
+  opacity: .8;
+  transition: all 0.3s ease-in;
+}
+
+
+.moroccan-video-mobile{
+  display: none;
+}
+
+/* END OF HEADER AND .main CONTENT  */
+
+/* THE START OF FIRST SECTION  */
+
+.section-1{
+  width: 100%;
+  padding: 80px 0;
+  text-align: center;
+}
+
+
+.section-1 .section-1-headline{
+  font-size: 42px;
+  margin: 0 auto 16px;
+  width: 48rem;
+}
+
+.section-1 .section-1-subheadline{
+  font-size: 16px;
+  color: rgb(123, 123, 123);
+}
+
+.section-1 .cities-container{
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start;
+  gap: 30px;
+}
+
+.section-1 .cities-container::-webkit-scrollbar{
+  display: none;
+}
+
+.section-1 .citie-box{
+  flex-shrink: 0;
+  width: 18rem;
+  height: 18rem;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+
+.section-1 .citie-image{
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.6);
+  transition: all .2s ease-in;
+}
+
+
+.section-1 .citie-image:hover{
+  transform: scale(1.1);
+}
+
+
+.section-1 .citie-name{
+  font-size: 21px;
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  color: white;
+  font-weight: 500;
+}
+
+.section-1 .more{
+  display: block;
+  text-align: center;
+}
+
+.section-1 .more .voir-btn{
+  color: white;
+  background-image: linear-gradient(to right bottom, rgb(250, 106, 106), rgb(229, 12, 12));
+  transition: all .3s ease-in;
+}
+
+.section-1 .more .voir-btn:hover{
+  opacity: 0.85;
+}
+
+/* END OF SECION 1 */
+
+/* START OF SECTION 2 */
+
+
+.section{
+  width: 100%;
+  padding: 40px 0;
+}
+
+.section .section-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section .section-leftside,
+.section .section-rightside{
+  width: 50%;
+}
+
+.section .section-leftside h2{
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.section .section-leftside p{
+  font-size: 16px;
+  font-style: italic;
+  color: rgb(123, 123, 123);
+  margin-bottom: 20px;
+  line-height: 1.6rem;
+  word-spacing: .3rem;
+}
+
+
+.section .section-leftside .section-btn{
+  color: white;
+  background-image: linear-gradient(to right bottom, rgb(250, 106, 106), rgb(229, 12, 12));
+  transition: all .3s ease-in;
+}
+
+.section .section-leftside .section-btn:hover{
+  opacity: 0.8;
+}
+.section .section-rightside{
+  width: 500px;
+  height: 700px;
+}
+
+.section .section-rightside .section-image{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* END OF FIVTH SECTION  */
+
+/* START OF SUBSCRIBE SECTION  */
+
+
+.subscribe-setion{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.subscribe-setion .sub-bg-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  position: absolute;
+  filter: brightness(.4);
+  inset: 0;
+  z-index: -20;
+}
+
+.subscribe-setion .sub-headline{
+  color: white;
+  text-align: center;
+  margin: 0 0 15px;
+  font-size: 45px;
+}
+
+.subscribe-setion .sub-subheadline{
+  color: rgb(211, 211, 211);
+  text-align: center;
+  font-size: 16px;
+  color: rgb(219, 219, 219);
+  margin-bottom: 20px;
+}
+
+.subscribe-setion form{
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.subscribe-setion form .input-container{
+  position: relative;
+  width: 50%;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.subscribe-setion form .input-container label{
+  position: absolute;
+  left: 6.5%;
+  top: 50%;
+  translate: -50% -50%;
+  color: rgb(102, 102, 102);
+  padding: 3px 8px;
+  transition: all .2s ease-out;
+}
+
+.subscribe-setion form .input-container input{
+  position: absolute;
+  inset: 0;
+  outline: none;
+  border-radius: 10px;
+  padding: 0 20px;
+  font-size: 18px;
+  transition: all .3s ease-in;
+}
+
+
+.subscribe-setion form .input-container input:focus + label,
+.subscribe-setion form .input-container input:not(:placeholder-shown) + label{
+  top: 0%;
+  left: 5.5%;
+  scale: .9;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.subscribe-setion form .sub-btn{
+  background-image: linear-gradient(to right bottom, rgb(250, 106, 106), rgb(229, 12, 12));
+  color: white;
+  transition: all .3s ease-in;
+}
+
+.subscribe-setion form .sub-btn:hover{
+  opacity: .9;
+}
+
+/* END OF ALL SECTIONS  */
+

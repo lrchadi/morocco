@@ -1,0 +1,120 @@
+/* ===== Reset & base ===== */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+body {
+    background:#f7f7f8;
+    color:#1a1a1a;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/* ===== Header ===== */
+.paye-header{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.paye-header .logo-link{
+  color: black;
+}
+
+.paye-header a{
+  position: relative;
+  text-transform: capitalize;
+  color: black;
+}
+
+.paye-header a::before{
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 0%;
+  height: 3px;
+  transition: all .3s ease;
+  background-color: rgb(11, 11, 11);
+}
+
+.site-header {
+    background: linear-gradient(180deg,#0b3b66,#184f7a);
+    color: #fff;
+    padding: 22px 16px;
+    text-align:center;
+}
+.site-header h1 { margin:0 0 6px 0; font-size:1.25rem; }
+.site-header p.lead { margin:0; opacity:0.95; font-size:0.95rem; }
+
+/* ===== Nav (quick links) ===== */
+nav.quick {
+    display:flex;
+    gap:8px;
+    padding:10px;
+    overflow-x:auto;
+    background: #fff;
+    border-bottom: 1px solid #eef0f2;
+}
+nav.quick a {
+    flex:0 0 auto;
+    text-decoration:none;
+    padding:8px 12px;
+    border-radius:999px;
+    background:#f0f4f8;
+    color:#0b3b66;
+    font-weight:600;
+    font-size:0.88rem;
+    white-space: nowrap;
+    transition: all .1s ease-in;
+    
+}
+
+nav.quick a:hover{
+    box-shadow: 0 0 8px 0 rgb(32, 32, 32) ;
+}
+
+/* ===== Main cards ===== */
+main { padding: 12px; }
+.card {
+    background:#ffffff;
+    border-radius:12px;
+    margin: 12px 0;
+    padding: 14px;
+    box-shadow: 0 6px 18px rgba(15,20,30,0.04);
+    overflow:hidden;
+}
+.card h2 { margin:0 0 8px 0; font-size:1.05rem; color:#0c3a5a; }
+.card p { margin:0 0 12px 0; text-align:justify; }
+.card p.long { font-size:1rem; margin-bottom:14px; }
+
+/* ===== Grid images ===== */
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 10px 0 14px 0;
+}
+.images-grid img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+
+/* Responsive tweaks */
+@media (min-width:601px) {
+    header h1 { font-size:1.6rem; }
+    .card { padding:20px; }
+    .card p.long { font-size:1.03rem; }
+    nav.quick { justify-content:center; }
+    .images-grid img { height:130px; }
+}

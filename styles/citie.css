@@ -1,0 +1,76 @@
+.main-container{
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+
+.main-container .main-bg-image{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -88;
+  filter: brightness(.5);
+}
+
+
+.main-container .citie-name,
+.main-container .citie-disc{
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  text-align: center;
+}
+
+.main-container .citie-name{
+  font-size: 72px;
+  font-weight: 500;
+  font-family: serif;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+section{
+  padding: 40px 0;
+}
+
+section .title{
+  font-size: 42px;
+  font-family: serif;
+  margin: 0 0 20px;
+}
+
+section .paragraph{
+  color: rgb(35, 35, 35);
+  font-size: 16px;
+  margin: 0 0 8rem;
+  line-height: 1.6rem;
+}
+
+section ul{
+  list-style-position: inside;
+  margin-top: 10px;
+}
+
+section ul ul{
+  margin-left: 1.2rem;
+}
+
+section li{
+  margin-bottom: .2rem;
+}
+
+section .film{
+  width: 100%;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+section .film .video{
+  width: 50rem;
+  height: 26rem;
+}

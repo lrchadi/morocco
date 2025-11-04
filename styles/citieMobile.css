@@ -1,0 +1,17 @@
+@media screen and (max-width: 550px) {
+  .main-container .citie-disc{
+    width: 90%;
+  }
+  .main-container .citie-name{
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  section{
+    padding: 40px 14px;
+  }
+
+  section .film .video{
+    width: 100%;
+    height: 14rem;
+  }
+}

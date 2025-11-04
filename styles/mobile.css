@@ -1,0 +1,150 @@
+@media screen and (width <= 550px) {
+  .header-content{
+    max-width: 100%;
+    padding: 5px 25px;
+  }
+  nav{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4.5rem;
+    width: 100%;
+    height: 100vh;
+    transition: all .3s ease-in;
+    z-index: 20;
+  }
+  nav::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../assets/zalij.png") no-repeat top/cover;
+    filter: brightness(0.4);
+    z-index: -1;
+  }
+  header nav a{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: start;
+    z-index: 10;
+  }
+  .show-menu{
+    left: 0;
+  }
+  .close-icon{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+  }
+ 
+  .menu-icon{
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+  }
+  .update-icons{
+    filter: brightness(0) invert(0);
+    transition: all .3s ease-in;
+  }
+  
+  header .close-icon,
+  header .menu-icon{
+    display: block;
+  }
+  .arabic-name{
+    font-size: var(--headline-mobile);
+  }
+  .english-name{
+    font-size: calc(var(--subheadline-mobile) - 2px);
+    bottom: -12px;
+  }
+  .moroccan-video{
+    display: none;
+  }
+  .moroccan-video-mobile{
+    display: block;
+    object-fit: cover;
+    object-position: center;
+  }
+  .main .hero-content .hero-headline{
+    width: 90%;
+    font-size: 38px;
+  }
+  .main .hero-content .hero-subheadline{
+    font-size: 16px;
+  }
+  .section-1{
+    padding: 40px 14px;
+  }
+  .section-1 .section-1-headline{
+    width: 98%;
+    font-size: var(--headline-mobile);
+  }
+  .section-1 .section-1-subheadline{
+    font-size: 14px;
+    width: 98%;
+  }
+  .section-1 .cities-container{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .section-1 .citie-box{
+    width: 80%;
+    height: 340px;
+  }
+  .section{
+    padding: 0px 0;
+    margin-bottom: 10px;
+  }
+  .section-box{
+    flex-direction: column;
+    padding: 40px 14px;
+  }
+  .section .section-leftside,
+  .section .section-rightside{
+    width: 100%;
+  }
+  .section .section-leftside{
+    margin-bottom: 40px;
+  }
+  .section .section-leftside p,
+  .section .section-leftside .section-btn{
+    font-size: 14px;
+  } 
+  .section-rtl{
+    flex-direction: column-reverse;
+  }
+  .subscribe-setion{
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe-setion .sub-headline{
+    font-size: 30px;
+  }
+  .subscribe-setion form{
+    margin-top: 20px;
+    gap: 16px;
+  }
+  .subscribe-setion .sub-subheadline{
+    font-size: 16px;
+    width: 92%;
+    margin: auto;
+  }
+  .subscribe-setion form .input-container{
+    width: 100%;
+  }
+  .subscribe-setion form .input-container label{
+    left: 12%;
+  }
+  .subscribe-setion form .input-container input:focus + label,
+  .subscribe-setion form .input-container input:not(:placeholder-shown) + label{
+    left: 8%;
+  }
+  
+}

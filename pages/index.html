@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morocco - Acceuil</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/mobile.css" />
+  </head>
+  <body>
+    <!-- WE WILL START WITH THE NAVBAR -->
+    <!-- IT WILL CONTAIN A LOGO + SOME LINKS FOR SOME SECTION AND OTHER PAGES -->
+
+    <!-- CREATING THE NAVBAR -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="/pages/index.html" class="logo-link">
+            <div class="logo">
+              <h1 class="arabic-name">المغرب</h1>
+              <p class="english-name">Morocco</p>
+            </div>
+          </a>
+          <nav>
+            <a href="./paye.html" class="link">à propos du pays</a>
+            <a href="./cities.html" class="link">villes</a>
+            <a href="#" class="link">à propos de nous</a>
+            <img
+              src="../assets/icons/close.png"
+              width="30"
+              class="close-icon"
+              alt="close-icon"
+            />
+          </nav>
+          <img
+            src="../assets/icons/menu.png"
+            width="30"
+            class="menu-icon"
+            alt="menu-icon"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION  -->
+    <!-- THIS SECTION WILL CONTAIN A VIDEO IN THE BACKGROUD + A HEADLINE AND SUBHEADLINE + CTA BUTTON  -->
+    <main class="main">
+      <!-- VIDEO FOR DESKTOP VIEW  -->
+
+      <video
+        class="moroccan-video"
+        autoplay
+        muted
+        loop
+        width="100%"
+        height="100%"
+      >
+        <source src="../assets/videos/Morocco video.mp4" type="video/mp4" />
+        it looks like your browser does not support video tag.
+      </video>
+
+      <!-- VIDEO FOR MOBILE VIEW  -->
+      <video
+        class="moroccan-video-mobile"
+        autoplay
+        loop
+        muted
+        width="100%"
+        height="100%"
+      >
+        <source src="../assets/videos/Morocco video mobile.mp4" />
+        it looks like your browser does not support video tag.
+      </video>
+
+      <div class="hero-content">
+        <h1 class="hero-headline">
+          Voyagez au cœur du <span class="word-style">Maroc</span> authentique
+        </h1>
+        <p class="hero-subheadline">
+          Pas seulement une destination, mais une expérience façonnée par
+          l’aventure, la culture et l’authenticité.
+        </p>
+        <button class="btn hero-btn">
+          <a href="./paye.html">Savoir plus</a>
+        </button>
+      </div>
+    </main>
+
+    <!-- FIN DE HERO SECTION  -->
+    <!-- FISRT SECTION: DEVISE THE MOROCCAN MAP TO 4 => ( NORD, EAST, WEAST, SUD ) -->
+
+    <section class="section-1">
+      <div class="container">
+        <h2 class="section-1-headline">
+          Explorez le <span class="word-style">Maroc</span> à travers ses
+          régions
+        </h2>
+        <p class="section-1-subheadline">
+          Découvrez le Nord, le Sud, l’Est et l’Ouest du royaume et plongez dans
+          les villes qui font la richesse de chaque territoire.
+        </p>
+        <div class="cities-container">
+          <div class="citie-box">
+            <a href="./villes/fés.html">
+              <img
+                src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2023/09/medina-de-fez.jpg"
+                alt="Fez"
+                class="citie-image"
+              />
+              <p class="citie-name">Fez</p>
+            </a>
+          </div>
+          <div class="citie-box">
+            <a href="./villes/essaouira.html">
+              <img
+                src="https://www.27vakantiedagen.nl/wp-content/uploads/2021/09/marokko-essaouira.jpg"
+                alt="Essaouira"
+                class="citie-image"
+              />
+              <p class="citie-name">Essaouira</p>
+            </a>
+          </div>
+          <div class="citie-box">
+            <a href="./villes/casablanca.html">
+              <img
+                src="https://fnh.ma//uploads/actualites/681b5eb708172_67362b5632656_63dbc9e6bf9a2_1000_F_356090312_SDM7YUgFmdTtpSWCObi5LsD7atfPQomi-transformed.jpeg"
+                alt="Casablanca"
+                class="citie-image"
+              />
+              <p class="citie-name">Casablanca</p>
+            </a>
+          </div>
+          <div class="citie-box">
+            <a href="./villes/agadir.html">
+              <img
+                src="https://www.ntla9awfbladna.ma/01JVMVPGX6ZSRQ47WY33QYR16A.webp"
+                alt="Agadir"
+                class="citie-image"
+              />
+              <p class="citie-name">Agadir</p>
+            </a>
+          </div>
+          <div class="citie-box">
+            <a href="./villes/chefchaouen.html">
+              <img
+                src="https://www.zagoraexperience.com/wp-content/uploads/2023/05/Escursione-da-Fes-a-Chefchaouen.jpg"
+                alt="Chefchaouen"
+                class="citie-image"
+              />
+              <p class="citie-name">Chefchaouen</p>
+            </a>
+          </div>
+          <div class="citie-box">
+            <a href="./villes/marrakech.html">
+              <img
+                src="https://menaragardens.com/wp-content/uploads/2024/08/menera-garden-marakech.webp"
+                alt="Marrackech"
+                class="citie-image"
+              />
+              <p class="citie-name">Marrackech</p>
+            </a>
+          </div>
+          <div class="citie-box">
+            <a href="./villes/tétouan.html">
+              <img
+                src="https://quadtetouan.com/images/2021/01/17/t%C3%A9touan-quad.jpg"
+                alt="Tetouan"
+                class="citie-image"
+              />
+              <p class="citie-name">Tetouan</p>
+            </a>
+          </div>
+        </div>
+        <a href="./cities.html" class="more">
+          <button class="btn voir-btn">Voir plus</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- END OF FIRST SECTION  -->
+    <!-- NOW WE WILL START THE SECOND SECTION  -->
+
+    <section class="section">
+      <div class="container">
+        <div class="section-box">
+          <div class="section-leftside">
+            <h2>Explorez l’âme du <span class="word-style">Maroc</span></h2>
+            <p>
+              Le Maroc est une terre de contrastes où chaque région raconte une
+              histoire différente. Du Nord au Sud, de l’Ouest à l’Est, le pays
+              dévoile des paysages uniques : montagnes enneigées, déserts dorés,
+              médinas vibrantes et plages infinies. Entre traditions ancestrales
+              et modernité, c’est une destination qui séduit par son
+              authenticité et la chaleur de son accueil. Explorer le Maroc,
+              c’est découvrir bien plus qu’un pays : c’est vivre une expérience
+              inoubliable.
+            </p>
+          </div>
+          <div class="section-rightside">
+            <img
+              src="../assets/Sahara.jpg"
+              alt="Sahara"
+              class="section-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END OF SECCOND SECTION  -->
+    <!-- NOW WE WILL START THE THIRD SECTION  -->
+
+    <section class="section">
+      <div class="container">
+        <div class="section-box section-rtl">
+          <div class="section-rightside">
+            <img
+              src="../assets/Moroccan_Hospitality.jpg"
+              alt="Moroccan Hospitality"
+              class="section-image"
+            />
+          </div>
+          <div class="section-leftside">
+            <h2>
+              L’hospitalité <span class="word-style">Marocaine,</span> un art de
+              vivre
+            </h2>
+            <p>
+              Au Maroc, chaque visiteur est considéré comme un invité d’honneur.
+              Un sourire chaleureux et un thé à la menthe marquent souvent le
+              début de la rencontre. Les Marocains partagent avec générosité,
+              même lorsqu’ils possèdent peu. Dans les maisons comme dans les
+              ruelles, la bienveillance se ressent partout. Chaque repas devient
+              un moment de partage et de convivialité. Plus qu’un voyage, c’est
+              une véritable expérience humaine.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END OF THIRD SECTION  -->
+    <!-- NOW WE WILL START THE FOURTH SECTION  -->
+
+    <section class="section">
+      <div class="container">
+        <div class="section-box">
+          <div class="section-leftside">
+            <h2>
+              Le football, la passion du peuple
+              <span class="word-style">Marocaine</span>
+            </h2>
+            <p>
+              Au Maroc, le football est bien plus qu’un sport, c’est une
+              véritable langue commune. Des ruelles des médinas aux grands
+              stades, chaque match rassemble toutes les générations. Les cafés
+              vibrent au rythme des rencontres, transformant chaque but en fête
+              collective. Le ballon devient un symbole de rêve, d’unité et
+              d’espoir pour la jeunesse. La fierté nationale s’exprime avec
+              force lors des exploits des Lions de l’Atlas. Ici, le football
+              n’est pas seulement joué, il est vécu avec le cœur.
+            </p>
+          </div>
+          <div class="section-rightside">
+            <img
+              src="../assets/Moroccan_Football.jpg"
+              alt="Football"
+              class="section-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END OF FOURTH SECTION  -->
+    <!-- NOW WE WILL START THE FIVTH SECTION  -->
+
+    <section class="section">
+      <div class="container">
+        <div class="section-box section-rtl">
+          <div class="section-rightside">
+            <img
+              src="../assets/Moroccan_Culture.jpg"
+              alt="Football"
+              class="section-image"
+            />
+          </div>
+          <div class="section-leftside">
+            <h2>
+              Le <span class="word-style">Maroc,</span> un héritage culturel
+              vivant
+            </h2>
+            <p>
+              Le Maroc est une terre où l’histoire et les traditions se mêlent
+              harmonieusement. Ses médinas, classées au patrimoine mondial,
+              racontent des siècles de savoir-faire. Des festivals colorés aux
+              musiques envoûtantes, chaque région exprime sa propre identité.
+              L’artisanat, des tapis berbères aux poteries, reflète un héritage
+              transmis avec fierté. Les traditions culinaires offrent une
+              richesse de saveurs uniques au monde. Ici, la culture n’est pas
+              figée : elle se vit au quotidien avec passion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END OF FIVTH SECTION  -->
+    <!-- NOW WE WILL START THE 6TH SECTION  -->
+
+    <section class="section">
+      <div class="container">
+        <div class="section-box">
+          <div class="section-leftside">
+            <h2>
+              Le <span class="word-style">Maroc,</span> entre nature et histoire
+            </h2>
+            <p>
+              Des dunes infinies du Sahara aux montagnes enneigées de l’Atlas,
+              le Maroc offre une diversité de paysages à couper le souffle. Ses
+              médinas anciennes, ses kasbahs majestueuses et ses sites classés
+              au patrimoine mondial de l’UNESCO témoignent d’une histoire riche
+              et vivante. Entre nature préservée et héritage culturel, chaque
+              lieu raconte une partie de l’âme marocaine.
+            </p>
+          </div>
+          <div class="section-rightside">
+            <img
+              src="../assets/Moroccan_Montagne.jpg"
+              alt="Montagnes"
+              class="section-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe-setion">
+      <img
+        src="../assets/Moroccan_General.jpg"
+        alt="This is Morocco"
+        class="sub-bg-image"
+      />
+      <div class="container">
+        <h1 class="sub-headline">Abonnez-vous à notre Newsletter</h1>
+        <p class="sub-subheadline">
+          Soyez informé en avant-première des actualités, événements et
+          nouveautés concernant le Maroc.
+        </p>
+        <form>
+          <div class="input-container">
+            <input type="text" id="name" required placeholder=" " />
+            <label for="name">Name</label>
+          </div>
+          <div class="input-container">
+            <input type="email" required id="email" placeholder=" " />
+            <label for="email">Email</label>
+          </div>
+          <button type="submit" class="btn sub-btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <a href="/pages/index.html" class="logo-link">
+        <div class="logo">
+          <h1 class="arabic-name">المغرب</h1>
+          <p class="english-name">Morocco</p>
+        </div>
+      </a>
+      <p class="small-desc">
+        Le Maroc est une terre de contrastes où traditions et modernité se
+        rencontrent. Entre ses paysages variés, de l’Atlas au Sahara, et ses
+        villes chargées d’histoire, le pays offre une richesse culturelle et
+        humaine unique à découvrir.
+      </p>
+      <div class="social-links">
+        <a href="#">
+          <img
+            src="../assets/icons/youtube.png"
+            alt="Youtube"
+            width="26px"
+            height="26px"
+            class="icon"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="../assets/icons/instagram.png"
+            alt="Instagram"
+            width="26px"
+            height="26px"
+            class="icon"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="../assets/icons/facebook.png"
+            alt="Facebook"
+            width="26px"
+            height="26px"
+            class="icon"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="../assets/icons/twitter.png"
+            alt="Twitter - (X)"
+            width="26px"
+            height="26px"
+            class="icon"
+          />
+        </a>
+      </div>
+      <div class="pages-links">
+        <ul>
+          <li><a href="./paye.html">à propos du pays</a></li>
+          <li><a href="./cities.html">villes</a></li>
+          <li><a href="./about.html">à propos de nous</a></li>
+          <li><a href="#">conditions d'utilisation</a></li>
+          <li><a href="#">politique de confidentialité</a></li>
+        </ul>
+      </div>
+      <div class="copyright">© 2025 Tous droits réservés – Morocco</div>
+    </footer>
+
+    <script type="module" src="../scripts/main.js"></script>
+  </body>
+</html>

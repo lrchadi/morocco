@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&family=Aref+Ruqaa:wght@400;700&family=Italianno&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --headline-desktop: 4rem;
+  --subheadline-desktop: 1.5rem;
+  --headline-mobile: 2.25rem;
+  --subheadline-mobile: 1.5rem;
+  --text-size: 16px;
+  --red-color: #CF0F47;
+  --black-color: #000;
+  --secondary-red-color: #FF0B55;
+  --gray-color: #DCDCDC;
+  --rounded-sm: 0.25rem;
+  --rounded-md: 0.375rem;
+  --rounded-full: 100%;
+  --arabic-font: "Aref Ruqaa", serif;
+  --english-font:  "Italianno", cursive;
+}
+
+
+body{
+  font-family: "Inter", sans-serif;
+}
+
+.btn{
+  padding: 10px 14px;
+  font-size: var(--text-size);
+  border-radius: var(--rounded-sm);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.word-style{
+  background-image: linear-gradient(to right bottom, rgb(250, 106, 106), rgb(229, 12, 12));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.escap-navbar{
+  margin-top: 90px;
+}
+
+.arabic{
+  font-family: var(--arabic-font);
+}
