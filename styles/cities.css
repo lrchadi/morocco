@@ -109,7 +109,7 @@ header nav a:hover::before{
     content: "";
     position: absolute;
     inset: 0;
-    background: url("../assets/zalij.png") no-repeat top/cover;
+    background: url("../assets/zellige_marocain.png") no-repeat top/cover;
     filter: brightness(0.4);
     z-index: -1;
   }

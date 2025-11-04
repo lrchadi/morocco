@@ -5,6 +5,7 @@
   .main-container .citie-name{
     flex-direction: column-reverse;
     gap: 0;
+    font-size: 55px;
   }
   section{
     padding: 40px 14px;
