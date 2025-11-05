@@ -47,6 +47,12 @@ a{
   margin: 0 auto;
 }
 
+@media screen and (max-width: 80rem) {
+  .container{
+    padding: 0 4rem;
+  }
+}
+
 .word-style{
   background-image: linear-gradient(to right bottom, rgb(250, 106, 106), rgb(229, 12, 12));
   color: transparent;
