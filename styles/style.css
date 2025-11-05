@@ -52,6 +52,12 @@ a{
     padding: 0 4rem;
   }
 }
+@media screen and (max-width: 550px) {
+  .container{
+    padding: 0 ;
+  }
+}
+
 
 .word-style{
   background-image: linear-gradient(to right bottom, rgb(250, 106, 106), rgb(229, 12, 12));
