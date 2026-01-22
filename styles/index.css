@@ -172,7 +172,7 @@ header nav a:hover::before{
   display: flex;
   flex-wrap: wrap;
   align-items: start;
-  justify-content: start;
+  justify-content: center;
   gap: 30px;
 }
 
